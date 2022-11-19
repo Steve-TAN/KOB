@@ -40,6 +40,7 @@ public class RegisterServiceImpl implements RegisterService {
 
     if (password.length() == 0 || confirmedPassword.length() == 0) {
       map.put("error_message", "密码不能为空");
+      return map;
     }
 
     if (username.length() > 100) {
@@ -66,7 +67,7 @@ public class RegisterServiceImpl implements RegisterService {
     }
 
     String encodedPassword = passwordEncoder.encode(password);
-    String photo = "https://cdn.acwing.com/media/user/profile/photo/238452_lg_1c0a4cca4e.jpg";
+    String photo = "https://cdn.acwing.com/media/user/profile/photo/1_lg_844c66b332.jpg";
     User user = new User(null, username, encodedPassword, photo);
     userMapper.insert(user);
 
