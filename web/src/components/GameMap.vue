@@ -14,10 +14,12 @@ export default {
         const store = useStore();
         let parent = ref(null);
         let canvas = ref(null);
-        
-        // 创建gamemap对象
+
         onMounted(() => {
-            new GameMap(canvas.value.getContext('2d'), parent.value, store)
+            store.commit(
+                "updateGameObject",
+                new GameMap(canvas.value.getContext('2d'), parent.value, store)
+            );
         });
 
         return {
@@ -32,9 +34,6 @@ export default {
 div.gamemap {
     width: 100%;
     height: 100%;
-    /**
-        内容竖直水平居中
-     */
     display: flex;
     justify-content: center;
     align-items: center;
