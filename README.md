@@ -4,4 +4,6 @@
 
 操作方式：玩家亲自出马，WASD操控方向 或者 通过代码实现机器人操作。
 
-使用到的技术：前端vue、js， 后端 springboot、mysql、mybatis
+![images](IMG/注册界面.png)
+
+使用到的技术：前端vue、js、bootstrap， 后端 springboot、mysql、mybatis、springsecurity
