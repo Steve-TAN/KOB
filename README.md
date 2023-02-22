@@ -1,7 +1,7 @@
 # KOB
 
 ## 用户注册登录界面
-![image](IMG/用户登录界面.png)
+![image](IMG/登录界面.png)
 ![image](IMG/注册界面.png)
 
 ## 匹配对战界面
