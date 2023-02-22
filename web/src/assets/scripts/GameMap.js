@@ -11,15 +11,15 @@ export class GameMap extends AcGameObject {
         this.store = store;
         this.L = 0;
 
-        this.rows = 13;
-        this.cols = 14;
+        this.rows = 20;
+        this.cols = 21;
         
-        this.inner_walls_count = 20;
+        this.inner_walls_count = 55;
         this.walls = [];
 
         this.snakes = [
-            new Snake({id: 0, color: "#4876EC", r: this.rows - 2, c: 1}, this),
-            new Snake({id: 1, color: "#F94848", r: 1, c: this.cols - 2}, this),
+            new Snake({id: 0, color: "#FF6A6A", r: this.rows - 2, c: 1}, this),
+            new Snake({id: 1, color: "#00BFFF", r: 1, c: this.cols - 2}, this),
         ];
     }
 

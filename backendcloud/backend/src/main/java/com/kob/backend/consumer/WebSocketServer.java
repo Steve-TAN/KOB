@@ -8,7 +8,6 @@ import com.kob.backend.mapper.RecordMapper;
 import com.kob.backend.mapper.UserMapper;
 import com.kob.backend.pojo.Bot;
 import com.kob.backend.pojo.User;
-import com.sun.org.apache.xpath.internal.operations.Mult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.LinkedMultiValueMap;
@@ -85,9 +84,9 @@ public class WebSocketServer {
     Bot botA = botMapper.selectById(aBotId), botB = botMapper.selectById(bBotId);
 
     Game game = new Game(
-            13,
-            14,
             20,
+            21,
+            55,
             a.getId(),
             botA,
             b.getId(),
